@@ -148,7 +148,7 @@ class httpPost(Thread):
         self.running = True
 
     # generates a referer array
-    def referer_list():
+    def referer_list(self):
 
         global headers_referers
         headers_referers.append('http://www.google.com/?q=')
