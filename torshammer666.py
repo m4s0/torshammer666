@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python2
+
 # Torshammer666-(edit) with New  random keep alive values added GET request, More randomizers and other tweaks
 # An0nsec666 An0nsecHackers
 import os
